@@ -7,6 +7,7 @@
     background-color: $solidWhite;
     border-bottom: 2px solid rgba($color: $primary, $alpha: 0.1);
     z-index: 10;
+    padding: 15px 0;
 
     .wrapper {
         // border: 1px solid red;
@@ -46,3 +47,36 @@
         margin-left: 50px;
     }
 }   
+
+// TODO: implement slide out functoinality in JS
+.slideOutNav {
+    background-color: $primary;
+    color: $solidWhite;
+    min-height: 100vh;
+    // prevent taking up entire space on page and stays on the left side
+    position: fixed;
+    top: 0;
+    padding: 30px 50px;
+    width: 100%;
+    max-width: 450px;
+    font-weight: bold;
+    // move button to the right
+    display: flex;
+    flex-direction: column;
+    // move nav away from page, copy max-width
+    z-index: 20;
+    left: -450px;
+    
+    button {
+        align-self: flex-end;
+    }
+
+    a {
+        line-height: 2rem;
+
+        &:hover,
+        &:focus {
+            color: rgba($color: $solidWhite, $alpha: 0.6);
+        }
+    }
+}
