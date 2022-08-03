@@ -30,11 +30,24 @@ a {
         border: 2px solid $primary;
         @include fontSize(14);
         font-weight: bold;
-        padding: 15px 32px;             
+        padding: 15px 32px;         
+
+        &:hover, 
+        &:focus {
+            background-color: $primary;
+            color: $solidWhite;
+        }
     }
-    &:hover, 
-    &:focus {
+
+    &.secondaryButton {
         background-color: $primary;
         color: $solidWhite;
+
+        &:hover,
+        &:focus {
+            background-color: $solidWhite;
+            color: $primary;
+        }
     }
+
 }

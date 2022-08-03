@@ -355,7 +355,15 @@ a.button {
   font-weight: bold;
   padding: 15px 32px;
 }
-a:hover, a:focus {
+a.button:hover, a.button:focus {
   background-color: #084b6d;
   color: #fff;
+}
+a.secondaryButton {
+  background-color: #084b6d;
+  color: #fff;
+}
+a.secondaryButton:hover, a.secondaryButton:focus {
+  background-color: #fff;
+  color: #084b6d;
 }
