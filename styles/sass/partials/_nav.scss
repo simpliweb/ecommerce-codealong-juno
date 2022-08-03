@@ -1,0 +1,48 @@
+.navBar {
+    // for development
+    // border: 1px solid red;
+    position: sticky;
+    // tell the navbar where for it to start following - 0 means from the top
+    top: 0;
+    background-color: $solidWhite;
+    border-bottom: 2px solid rgba($color: $primary, $alpha: 0.1);
+    z-index: 10;
+
+    .wrapper {
+        // border: 1px solid red;
+        // to align all items in a straight line
+        display: flex;
+        // space in-between elements
+        justify-content: space-between;
+        // space all items are horizontally centered
+        align-items: center;
+    }
+
+    .searchCart {
+        // to align all items in a straight line
+        display: flex;
+        align-items: center;
+    }
+
+    .menuIcon, 
+    .bag {
+        padding: 10px 5px;
+    }
+
+    .counter {
+        background-color: $primary;
+        color: $solidWhite;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        // text-align: center; - doesn't work w/display flex, use padding instead or change line height
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+    }
+
+    .logo {
+        margin-left: 50px;
+    }
+}   
