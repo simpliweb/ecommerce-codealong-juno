@@ -1,0 +1,48 @@
+.categories {
+    padding: 90px 0;
+}
+
+.categoryGallery {
+    // border: 1px solid red;
+    // put them in a row
+    display: flex;
+    // over flow moves down
+    flex-wrap: wrap;
+    // even spacing right & left of the imgs
+    justify-content: space-evenly;
+    text-align: center;
+
+    .item1 {
+        background-color: $quinary;
+    }
+
+    .item2 {
+        background-color: $senary;
+    }
+
+    .item3 {
+        background-color: $tertiary;
+    }
+
+    .item4 {
+        background-color: $quaternary;
+    }
+
+    .item {
+        width: 40%;
+        border-radius: 10%;
+        padding: 40px;
+        margin: 25px 0;
+
+        & a:hover,
+        & a:focus, {
+            // scaling image down when smaller than 1
+            transform: scale(0.9);
+        }
+
+        img {
+            border-radius: 10%;
+            margin-bottom: 20px;
+        }
+    }
+}
